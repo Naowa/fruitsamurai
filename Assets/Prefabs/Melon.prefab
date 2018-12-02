@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 23946829191724334}
   - component: {fileID: 65707423486045984}
   - component: {fileID: 54765095630318110}
+  - component: {fileID: 114396077351693738}
   m_Layer: 0
   m_Name: Melon
-  m_TagString: Untagged
+  m_TagString: Fruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,3 +113,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114396077351693738
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1078785803482466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7f4462fff24c654eb36f30b21c153f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitTransform: {fileID: 0}
