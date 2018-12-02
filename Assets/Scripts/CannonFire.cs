@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class CannonFire : MonoBehaviour {
 
+	public bool testing;
 	public List<GameObject> fruits;
 	public Transform fireLocation;
+	public AudioSource cannonSound;
 
 	// Force Parameters
 
 	public float directionZ;
-	public float directionY;
+	public float directionY = 0.0f; // Kept in for sake of modularity. There should be no more reason to edit this.
 
 
 	public float interpolationPeriod;
@@ -24,12 +26,15 @@ public class CannonFire : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		time += Time.deltaTime;
+		if (testing) {
+			time += Time.deltaTime;
 
-		if (time >= interpolationPeriod) {
-			time = 0.0f;
+				if (time >= interpolationPeriod) {
+					time = 0.0f;
 
-			FireRandom();
+					FireRandom();
+				}
+		
 		
 		}
 
@@ -50,11 +55,12 @@ public class CannonFire : MonoBehaviour {
 		Debug.Log("Fire!");
 
 		GameObject spawnedFruit = Instantiate(fruit, fireLocation);
+		cannonSound.Play();
 
 		Rigidbody fruitRb = spawnedFruit.GetComponent<Rigidbody>();
 
 		Vector3 forceVector = new Vector3(0, directionY, directionZ);
 
-		fruitRb.AddForce(forceVector, ForceMode.VelocityChange);
+		fruitRb.AddRelativeForce(forceVector, ForceMode.VelocityChange); // Relative Force enables fruit to be fired in exact direction of
 	}
 }
