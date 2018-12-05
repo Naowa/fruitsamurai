@@ -114,7 +114,14 @@
      <Compile Include="Assets\OVRInputSelection\Scripts\PhysicsInteraction.cs" />
      <Compile Include="Assets\OVRInputSelection\Scripts\RawInteraction.cs" />
      <Compile Include="Assets\OVRInputSelection\Scripts\UIInteraction.cs" />
+     <Compile Include="Assets\Scripts\BallScript.cs" />
+     <Compile Include="Assets\Scripts\BottomColliderScript.cs" />
      <Compile Include="Assets\Scripts\CannonFire.cs" />
+     <Compile Include="Assets\Scripts\DoorOpen.cs" />
+     <Compile Include="Assets\Scripts\hand.cs" />
+     <Compile Include="Assets\Scripts\ScoreKeeper.cs" />
+     <Compile Include="Assets\Scripts\TopColliderScript.cs" />
+     <Compile Include="Assets\Scripts\VRRaycaster.cs" />
      <None Include="Assets\Oculus\VR\Resources\OVRMRUnlitTransparent.shader" />
      <None Include="Assets\Oculus\VR\Resources\OVRMRChromaKey.cginc" />
      <None Include="Assets\Oculus\VR\Shaders\OVRColorRampAlpha.shader" />

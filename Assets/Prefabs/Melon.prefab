@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65707423486045984}
   - component: {fileID: 54765095630318110}
   - component: {fileID: 114396077351693738}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Melon
   m_TagString: Fruit
   m_Icon: {fileID: 0}
